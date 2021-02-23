@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Muli:wght@600&display=swap" rel="stylesheet">
+	 <!-- Compiled and minified CSS -->
+    
+            
+    <!-- Custom styles for this template -->
+    <style>
+        /*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/templates/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+        
+        #wrapper {
+            overflow-x: hidden;
+        }
+        
+        #sidebar-wrapper {
+            min-height: 100vh;
+            margin-left: -15rem;
+            -webkit-transition: margin .25s ease-out;
+            -moz-transition: margin .25s ease-out;
+            -o-transition: margin .25s ease-out;
+            transition: margin .25s ease-out;
+        }
+        
+        #sidebar-wrapper .sidebar-heading {
+            padding: 0.875rem 1.25rem;
+            font-size: 1.2rem;
+        }
+        
+        #sidebar-wrapper .list-group {
+            width: 15rem;
+        }
+        
+        #page-content-wrapper {
+            min-width: 100vw;
+        }
+        
+        #wrapper.toggled #sidebar-wrapper {
+            margin-left: 0;
+        }
+        
+        @media (min-width: 768px) {
+            #sidebar-wrapper {
+                margin-left: 0;
+            }
+            #page-content-wrapper {
+                min-width: 0;
+                width: 100%;
+            }
+            #wrapper.toggled #sidebar-wrapper {
+                margin-left: -15rem;
+            }
+        }
+		.create{
+				margin-left:12px;
+				margin-top:12px;
+		}
+    </style>
+<script> 
+        function NewTab(linkk) { 
+            window.open( 
+               linkk,"_blank"); 
+        } 
+    </script> 
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Hunch.pal </div>
+            <div class="list-group list-group-flush">
+                <a href="/hunch/pal/user/<%=token%>/dashboard" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+                <a href="/hunch/pal/user/<%=token%>/resume" class="list-group-item list-group-item-action bg-light">Resumes</a>
+                <a href="/hunch/pal/user/profiledash/<%=token%>/profile/myjob" class="list-group-item list-group-item-action bg-light">My Jobs</a>
+                <a href="/hunch/pal/user/profiledash/<%=token%>/profile/userprofilehere" class="list-group-item list-group-item-action bg-light">Profile</a>
+                <a href="/hunch/pal/user/profiledash/<%=token%>/profile/settings" class="list-group-item list-group-item-action bg-light">Settings</a>
+                <a href="/hunch/pal/signout" class="list-group-item list-group-item-action bg-light">Sign Out</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Menu</button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Hunch <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Create Resume</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Options
+              </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Hunch Goal</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+		<div class="container">
+			
+			
+            <div class="container-fluid text-center">
+				<img src="/src/image/resume.png" class="img-fluid" alt="Responsive image">
+                <h1 class="mt-4" style="font-family: 'Muli', sans-serif;color:#2F363F">How do you want to start?</h1>
+                <div class="create">
+						<div class="container-fluid text-center" style="margin-top:80px;margin-bottom:100px;margin-left:100px;">
+  <div class="row justify-content-md-center">
+    <div class="col-sm">
+      
+		<div class="card text-center" style="width: 18rem;box-shadow: 10px 10px 12px grey;">
+  <img class="card-img-top mx-auto" src="/src/image/create.png" style="height:100px;width:100px;" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Create Resumme</h5>
+    <p class="card-text">We will help you create a resume and cv</p>
+    <a href="/hunch/pal/dashboard/<%=token%>/createresume" class="btn btn-primary">Create Now</a>
+  </div>
+</div>
+    </div>
+    <div class="col-sm">
+        
+		<div class="card text-center" style="width: 18rem;box-shadow: 10px 10px 12px grey;">
+  <img class="card-img-top mx-auto" src="/src/image/upload.png" style="height:100px;width:100px;" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Upload Resume</h5>
+    <p class="card-text">We'll re-format it and fill in your information</p>
+    <a href="/hunch/pal/resume/<%=token%>/upload" class="btn btn-primary">Upload Now</a>
+  </div>
+</div>
+    </div>
+    </div>
+   
+  </div>
+</div>
+				<div style="margin-top:23px;">
+					
+				<img src="/src/image/otherr.png" class="img-fluid" alt="Responsive image">
+				</div>
+				
+				
+				<div id="cardsresumes">
+<!-- 					 -->
+					  <div class="row">
+  <div class="col-sm-6">
+    <div class="card text-white bg-dark mb-3" >
+      <div class="card-body">
+        <h5 class="card-title"><%=first_name%></h5>
+        <p class="card-text"><%=occ%></p>
+		          <p class="card-text">created at <%=data%></p>
+        <a href="/hunch/pal/user/<%=token%>/resume/seemyresume" class="btn btn-primary">See Resume</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card text-white bg-dark mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Storing Multiple Resume</h5>
+        <p class="card-text">Feature on development.          Comming soon.</p>
+        <a href="/hunch/pal/pricing" class="btn btn-primary">See Pricing</a>
+      </div>
+    </div>
+  </div>
+</div>
+				</div>
+				
+<!-- 				 -->
+				<div style="margin-top:25px;">
+					
+				<img src="/src/image/upresume.png" class="img-fluid" alt="Responsive image">
+				</div>
+<!-- 	Resume Rendering			 -->
+				<div style="margin-top:8px">
+					<%uploadfile.forEach((x)=>{%>
+						<!-- <a href="https://hunchpal.run-ap-south1.goorm.io/"""></a> -->
+					<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-pills card-header-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="https://hunchpal.run-ap-south1.goorm.io/<%=x%>">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://hunchpal.run-ap-south1.goorm.io/<%=x%>" download>Download</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Keys</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><%=x%></h5>
+    <p class="card-text">Here we will add the details....</p>
+	  <%var I = uploadfile.indexOf(x)%>
+	  <%var TOK = token%>
+  <%var linkk = "https://hunchpal.run-ap-south1.goorm.io/hunch/pal/user/"+TOK %>
+    <a onClick="NewTab(<%=I%>)" class="btn btn-primary">Review</a>
+  </div>
+</div>
+					<br>
+					<%})%>
+				</div>
+				</div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>
